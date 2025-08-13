@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Areeb Khan — Graphic Designer & Web Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#06b6d4;--glass:rgba(255,255,255,0.04);}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,#071029 0%,#071833 60%);color:#eef2f7;}
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800}
+    .brand h1{margin:0;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;transition:0.3s;}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-bottom:32px}
+    .hero-card{background:var(--glass);padding:28px;border-radius:14px;backdrop-filter:blur(6px)}
+    .tag{display:inline-block;background:rgba(255,255,255,0.06);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);margin-bottom:12px}
+    .hero h2{margin:6px 0 12px;font-size:28px}
+    .hero p{color:var(--muted);line-height:1.6}
+    .cta{margin-top:16px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#071833;text-decoration:none;font-weight:600;transition:0.3s;}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(6,182,212,0.4);}
+    .profile-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:20px;border-radius:12px;text-align:center}
+    .profile-pic{width:140px;height:140px;border-radius:14px;background:linear-gradient(135deg,#334155,#1e293b);display:inline-flex;align-items:center;justify-content:center;font-size:40px;border:3px solid transparent;background:linear-gradient(#0b1220,#0b1220) padding-box,linear-gradient(135deg,var(--accent),#7c3aed) border-box;animation:borderRotate 6s linear infinite;}
+    @keyframes borderRotate{0%{border-image-source:linear-gradient(0deg,var(--accent),#7c3aed);}100%{border-image-source:linear-gradient(360deg,var(--accent),#7c3aed);}}
+    .meta{color:var(--muted);margin-top:10px;font-size:14px}
+    section h3{margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:var(--card);padding:12px;border-radius:10px;text-align:center;transition:0.3s;}
+    .card:hover{transform:translateY(-5px);box-shadow:0 8px 18px rgba(0,0,0,0.25);}
+    .card p{margin:8px 0 0;color:var(--muted);font-size:14px}
+    footer{margin-top:36px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center}
+    .social a{margin-left:12px;color:var(--muted);text-decoration:none;transition:0.3s;}
+    .social a:hover{color:#fff;}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}nav{display:none}.container{padding:18px;margin:18px}}
+    .watermark{position:fixed;right:24px;bottom:18px;opacity:0.12;font-weight:700;letter-spacing:1px}
+
+    /* Rating stars CSS */
+    .rating {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .rating input {
+      display: none;
+    }
+    .rating label {
+      font-size: 28px;
+      color: var(--muted);
+      transition: color 0.3s;
+      user-select: none;
+    }
+    .rating input:checked ~ label,
+    .rating label:hover,
+    .rating label:hover ~ label {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AK</div>
+        <div>
+          <h1>Areeb Khan</h1>
+          <div style="font-size:13px;color:var(--muted)">Graphic Designer • Web Engineer • Office Tools Expert</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <span class="tag">Multi-skilled Digital Creator</span>
+          <h2>Professional Designs, Websites & Office Solutions</h2>
+          <p>Assalamualaikum! I’m Areeb Khan — a Graphic Designer, Web Engineer, and Microsoft Office tools expert. I specialize in creating high-quality posters, websites, branding materials, presentations, and Excel reports with fast delivery and attention to detail.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Hire Me</a>
+            <a class="btn" style="margin-left:8px;opacity:0.95;background:transparent;color:var(--accent);border:1px solid rgba(255,255,255,0.06);" href="#portfolio">See Work</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <div class="profile-pic">AK</div>
+          <div style="font-weight:700;margin-top:12px">Areeb Khan</div>
+          <div class="meta">Karachi, Pakistan</div>
+        </aside>
+      </section>
+      <section id="portfolio">
+        <h3>Selected Work</h3>
+        <div class="grid" style="margin-top:12px">
+          <div class="card">
+            <p>Creative 14 August Poster — Pakistan Independence theme</p>
+          </div>
+          <div class="card">
+            <p>Khan Medical Professional Poster — Healthcare branding look</p>
+          </div>
+          <div class="card">
+            <p>Modern Social Media Campaign Poster — Trendy and clean</p>
+          </div>
+        </div>
+      </section>
+      <section id="services" style="margin-top:22px">
+        <h3>Services</h3>
+        <div class="grid">
+          <div class="card"><h4>Poster Design</h4><p class="meta">Print & digital posters</p></div>
+          <div class="card"><h4>Web Development</h4><p class="meta">HTML, CSS, JavaScript websites</p></div>
+          <div class="card"><h4>Office Solutions</h4><p class="meta">Word, PowerPoint, Excel projects</p></div>
+        </div>
+      </section>
+      <section id="skills" style="margin-top:22px">
+        <h3>Skills</h3>
+        <ul class="meta">
+          <li>Graphic Design: Adobe Illustrator, Photoshop</li>
+          <li>Web Engineering: HTML, CSS, JavaScript</li>
+          <li>Microsoft Office: Word, PowerPoint, Excel (Advanced)</li>
+        </ul>
+      </section>
+      <section id="contact" style="margin-top:22px">
+        <h3>Contact</h3>
+        <p class="meta">📧 Email: <a href="mailto:areebkhanwebcoder@gmail.com" style="color:var(--accent)">areebkhanwebcoder@gmail.com</a></p>
+        <p class="meta">📱 <a href="https://wa.me/923122165208" style="color:var(--accent)">WhatsApp Me</a></p>
+        <p class="meta">📍 Location: Karachi, Pakistan</p>
+      </section>
+
+      <!-- Rating Section -->
+      <section id="rating" style="margin-top:30px;">
+        <h3>Rate My Website</h3>
+        <p class="meta">Please rate my website to help me improve:</p>
+        <form class="rating" id="ratingForm" onsubmit="return false;">
+          <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">★</label>
+          <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">★</label>
+          <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">★</label>
+          <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">★</label>
+          <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
+        </form>
+        <p id="ratingResult" style="margin-top:12px; font-weight:600;"></p>
+      </section>
+
+    </main>
+    <footer>  
+      <div>© <strong>Areeb Khan</strong> — Designed by Areeb Khan Studio</div>
+      <div class="social"><a href="#">Instagram</a><a href="#">Dribbble</a></div>
+    </footer>
+  </div>
+  <div class="watermark">Designed by Areeb Khan</div>
+
+  <script>
+    // JS to show rating result message
+    const ratingForm = document.getElementById('ratingForm');
+    const ratingResult = document.getElementById('ratingResult');
+
+    ratingForm.addEventListener('change', (e) => {
+      const ratingValue = e.target.value;
+      ratingResult.textContent = `Thank you for rating ${ratingValue} star${ratingValue > 1 ? 's' : ''}!`;
+    });
+  </script>
+</body>
+</html>
